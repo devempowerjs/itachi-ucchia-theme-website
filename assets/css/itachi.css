@@ -1,0 +1,335 @@
+
+
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-akatsuki: #111111;
+  --text-light: #e0e0e0;
+  --itachi-red: #da0000;
+  --itachi-crimson: #8b0000;
+  --itachi-glow: rgba(218, 0, 0, 0.6);
+  --glass-bg: rgba(20, 20, 20, 0.7);
+  --glass-border: rgba(218, 0, 0, 0.3);
+}
+
+body.itachi-theme {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Open Sans', sans-serif;
+}
+
+body.itachi-theme h1, body.itachi-theme h2, body.itachi-theme h3, 
+body.itachi-theme h4, body.itachi-theme h5, body.itachi-theme h6 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+body.itachi-theme {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23da0000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2L15 8L22 9L17 14L18 21L12 17.5L6 21L7 14L2 9L9 8L12 2Z'/%3E%3C/svg%3E") 12 12, auto;
+}
+
+a, button, .btn-itachi {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23da0000' stroke='%23da0000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2L15 8L22 9L17 14L18 21L12 17.5L6 21L7 14L2 9L9 8L12 2Z'/%3E%3C/svg%3E") 12 12, pointer !important;
+}
+
+
+#hero {
+  background: none;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#hero:before {
+  display: none !important;
+}
+
+#embers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/itachi_hero_bg.png') center center / cover no-repeat;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+.glow-text-red {
+  color: #fff !important;
+  text-shadow: 0 0 10px var(--itachi-red), 0 0 20px var(--itachi-crimson);
+}
+
+.itachi-quote {
+  font-style: italic;
+  color: #ccc !important;
+  margin-top: 20px !important;
+  font-size: 1.2rem !important;
+  border-left: 3px solid var(--itachi-red);
+  padding-left: 15px;
+}
+
+.btn-itachi {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: var(--text-light);
+  border: 2px solid var(--itachi-red);
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(218, 0, 0, 0.2);
+}
+
+.btn-itachi:hover {
+  background-color: var(--itachi-red);
+  color: #fff;
+  box-shadow: 0 0 20px var(--itachi-glow);
+}
+
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 40px rgba(218, 0, 0, 0.2);
+}
+
+
+.section-bg-akatsuki {
+  background-color: var(--bg-akatsuki);
+  background-image: radial-gradient(circle at center, rgba(139,0,0,0.05) 0%, transparent 70%);
+}
+
+.profile-glow {
+  border: 2px solid var(--itachi-red);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--itachi-glow);
+}
+
+.text-muted-red {
+  color: #aaa;
+}
+
+
+.itachi-list {
+  list-style: none;
+  padding: 0;
+}
+.itachi-list li {
+  margin-bottom: 10px;
+}
+.itachi-list i {
+  color: var(--itachi-red);
+  margin-right: 10px;
+}
+.itachi-list a {
+  color: var(--text-light);
+}
+.itachi-list a:hover {
+  color: var(--itachi-red);
+}
+
+
+.progress-bar-wrap {
+  background: #222 !important;
+  border-radius: 5px;
+}
+.itachi-glow-bar {
+  background-color: var(--itachi-red) !important;
+  box-shadow: 0 0 10px var(--itachi-glow);
+  border-radius: 5px;
+}
+.progress .skill {
+  color: var(--text-light) !important;
+}
+
+
+.project-card {
+  padding: 30px;
+  text-align: center;
+  height: 100%;
+}
+.project-card .icon i {
+  font-size: 40px;
+  color: var(--itachi-red);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+.project-card:hover .icon i {
+  color: #fff;
+  text-shadow: 0 0 15px var(--itachi-red);
+}
+.project-card h4 a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.project-card:hover h4 a {
+  color: var(--itachi-red);
+}
+.project-card p {
+  color: #bbb;
+  font-size: 14px;
+}
+
+
+.resume .resume-title {
+  color: #fff;
+}
+.resume .resume-item {
+  border-left: 2px solid var(--itachi-red);
+  padding: 20px;
+}
+.resume .resume-item::before {
+  border: 2px solid var(--itachi-red);
+  background: var(--bg-dark);
+}
+.resume .resume-item h4 {
+  color: var(--itachi-red);
+}
+.resume .resume-item h5 {
+  background: rgba(255,0,0,0.1);
+  color: var(--itachi-red);
+}
+
+
+.section-title h2 {
+  color: #fff;
+}
+.section-title h2::after {
+  background: var(--itachi-red);
+}
+.section-title p {
+  color: #bbb;
+}
+
+
+.itachi-form input, .itachi-form textarea {
+  background: rgba(30, 30, 30, 0.8) !important;
+  border: 1px solid #444 !important;
+  color: #fff !important;
+  border-radius: 4px;
+}
+.itachi-form input:focus, .itachi-form textarea:focus {
+  border-color: var(--itachi-red) !important;
+  box-shadow: 0 0 8px var(--itachi-glow) !important;
+}
+
+
+.contact .info {
+  background: transparent !important;
+}
+.contact .info i {
+  color: var(--itachi-red) !important;
+  background: rgba(218,0,0,0.1) !important;
+}
+.contact .info h4 {
+  color: #fff !important;
+}
+.contact .info p {
+  color: #bbb !important;
+}
+
+
+#header {
+  background: rgba(10, 10, 10, 0.9);
+  border-right: 1px solid rgba(255,0,0,0.1);
+}
+.nav-menu a, .nav-menu a:focus {
+  color: #aaa;
+  background: transparent;
+}
+.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+  color: #fff;
+  background: var(--itachi-red);
+  box-shadow: 0 0 10px var(--itachi-glow);
+}
+.nav-menu a i, .nav-menu a:focus i {
+  color: #aaa;
+}
+.nav-menu a:hover i, .nav-menu .active i {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  #header {
+    background: #0a0a0a;
+  }
+}
+
+
+#footer {
+  background: #050505;
+  color: #aaa;
+  border-top: 1px solid var(--glass-border);
+}
+#footer h3 {
+  color: #fff;
+}
+#footer .social-links a {
+  background: #222;
+  color: var(--itachi-red);
+  border: 1px solid var(--itachi-red);
+}
+#footer .social-links a:hover {
+  background: var(--itachi-red);
+  color: #fff;
+  box-shadow: 0 0 10px var(--itachi-glow);
+}
+
+
+#preloader {
+  background: #050505;
+}
+#preloader:before {
+  display: none !important;
+}
+.sharingan-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  background: url('../img/sharingan_eye.png') center center / cover no-repeat;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+
+
+.arrow-down:after {
+  border-top: 2px solid var(--itachi-red) !important;
+  border-right: 2px solid var(--itachi-red) !important;
+}
+#scroll-title {
+  color: var(--itachi-red) !important;
+}
+#scroll-down::before {
+  background: var(--itachi-red) !important;
+}
