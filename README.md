@@ -37,3 +37,9 @@ This is a personal portfolio website styled with a premium, anime-inspired dark 
 1. Clone or download this repository to your local machine.
 2. Open `index.html` in any modern web browser (Chrome, Firefox, Edge, Safari).
 3. No build tools or backend server are required—everything runs purely on the frontend.
+
+## Author  
+
+Mayank Raj (devempowerjs)
+
+Building Software That Matters • Problem Solver • Open Source
